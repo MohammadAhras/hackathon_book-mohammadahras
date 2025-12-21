@@ -1,55 +1,35 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# AI-Spec–Driven Technical Book with Embedded RAG Chatbot Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Specification-First Execution
+Specification-first execution: All development begins with a detailed specification that defines scope, interfaces, acceptance criteria, and validation tests; Code implementation follows the spec precisely; Changes to behavior require specification updates first.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Technical Accuracy and Verifiability
+Technical accuracy and verifiability: All content and code examples must be fact-checked and tested for correctness; Code examples must be executable or deployable as provided; Claims must be supported by evidence or references.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Developer-Focused Clarity
+Developer-focused clarity: Content must be accessible to intermediate-advanced developers; Explanations include practical examples and use cases; Complex concepts are broken down into digestible, progressive learning steps.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Reproducibility
+Reproducibility: All setup procedures, deployments, and examples must be reproducible by others following the documentation; Dependencies and environment requirements are explicitly documented; Step-by-step workflows ensure consistent outcomes.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Zero-Hallucination AI Behavior
+Zero-hallucination AI behavior: The RAG chatbot must only respond based on indexed book content or user-selected text; No generation of information outside the source material; Mandatory source citations for all responses.
 
-### [PRINCIPLE_6_NAME]
+### Grounded RAG Responses
+Grounded responses: The chatbot retrieves strictly from indexed book content; User-selected text overrides global retrieval; Responses must be deterministic and consistently grounded in source material.
 
+## Book Standards
+Docusaurus-based technical book standards: Content formatted in MD/MDX for Docusaurus; Deployed to GitHub Pages; Target audience is intermediate-advanced developers; Content structured with architecture, tooling, workflow, and implementation details; Readability maintained at Flesch-Kincaid grade 10-12; All examples are executable or deployable.
 
-[PRINCIPLE__DESCRIPTION]
+## RAG Standards and Technical Constraints
+RAG implementation standards: Strictly sourced from indexed book content; User selection overrides global retrieval; Mandatory source section citations; Deterministic, grounded responses. Technical stack: Backend with FastAPI; Database with Neon Serverless Postgres; Vector DB with Qdrant Cloud (Free Tier); AI integration with OpenAI Agents SDK/ChatKit SDK; Full documentation of embeddings, chunking, and schemas.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Quality Validation
+Quality validation requirements: No broken builds, links, or code examples; Comprehensive hallucination and retrieval accuracy tests; Deployed chatbot functions correctly on GitHub Pages; All examples pass execution tests; Content meets readability standards.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+This constitution governs all aspects of the AI-Spec–Driven Technical Book project. All development, documentation, and implementation activities must comply with these principles. Changes to this constitution require explicit approval and documentation of the rationale. The project team must regularly review compliance with these principles during development cycles.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-22 | **Last Amended**: 2025-12-22
