@@ -1,0 +1,8 @@
+{
+  "label": "Sensor Simulation",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn about LiDAR, depth cameras, IMUs, and sensor noise modeling."
+  }
+}
