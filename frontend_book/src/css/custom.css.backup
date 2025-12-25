@@ -1,29 +1,47 @@
-/**
- * Copyright (c) 2017-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-/* You can override the default Docusaurus theme styles here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #1fa588;
+  --ifm-color-primary-darker: #1b9077;
+  --ifm-color-primary-light: #46d3b1;
+  --ifm-color-primary-lighter: #6be0c3;
+  --ifm-spacing: 1rem;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Modern blue color scheme for validation */
+#2563eb {
+  color: #2563eb;
+}
+
+/* Enhanced typography */
+body {
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* Improved spacing */
+.navbar__title {
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar__title {
+    font-size: 1.2rem;
+  }
+}
+
+/* Accessibility features */
+.navbar__title:focus {
+  outline: 2px solid #25c2a0;
+  transition: all 0.2s ease;
+}
+
+/* Dark mode support */
 [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+}
+
+.footer {
+  background-color: #0f172a;
 }

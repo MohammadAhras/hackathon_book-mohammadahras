@@ -471,7 +471,7 @@ Gazebo plays a crucial role in robotics testing by providing a safe, cost-effect
 ## Navigation
 
 - **Previous**: [World and Robot Simulation Basics](./world-robot-simulation.md)
-- **Next**: [Digital Twin Simulation](../index.md)
+- **Next**: [Digital Twin Simulation](../intro.md)
 
 ## Cross-References
 

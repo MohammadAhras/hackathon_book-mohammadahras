@@ -24,7 +24,7 @@ Discover LiDAR, depth cameras, IMUs, and sensor noise modeling. Understand simul
 
 ## Getting Started
 
-Start with the [Physics Simulation with Gazebo](./physics-simulation-gazebo/index.md) chapter to build a foundation for digital twin creation. Each chapter builds upon the previous one, providing you with comprehensive knowledge of simulation techniques for robotics applications.
+Start with the [Physics Simulation with Gazebo](./physics-simulation-gazebo/intro.md) chapter to build a foundation for digital twin creation. Each chapter builds upon the previous one, providing you with comprehensive knowledge of simulation techniques for robotics applications.
 
 ## Target Audience
 
@@ -32,8 +32,8 @@ This module is designed for AI and robotics students building simulated physical
 
 ## Navigation
 
-- **Previous**: [Humanoid Modeling with URDF](../humanoid-modeling/index.md)
-- **Next**: [Physics Simulation with Gazebo](./physics-simulation-gazebo/index.md)
+- **Previous**: [Humanoid Modeling with URDF](../humanoid-modeling/intro.md)
+- **Next**: [Physics Simulation with Gazebo](./physics-simulation-gazebo/intro.md)
 
 ## Further Reading
 

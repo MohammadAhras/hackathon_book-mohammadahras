@@ -141,5 +141,5 @@ Nodes, topics, services, and actions form the foundation of ROS 2 communication.
 
 ## Navigation
 
-- **Previous**: [ROS 2 Fundamentals](./index.md)
+- **Previous**: [ROS 2 Fundamentals](./intro.md)
 - **Next**: [Communication Model](./communication-model.md)

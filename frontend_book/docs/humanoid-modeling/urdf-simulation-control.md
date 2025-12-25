@@ -364,12 +364,11 @@ URDF models serve dual purposes in both simulation and real robot control. In si
 ## Navigation
 
 - **Previous**: [Representing Anatomy](./representing-anatomy.md)
-- **Next**: [Introduction to ROS 2 Robotics Module](../intro.md)
+- **Next**: [Digital Twin Simulation](../digital-twin-simulation/intro.md)
 
 ## Cross-References
 
-- Use [Python Agents with rclpy](../python-agents/index.md) to create control nodes that interact with your URDF models
-- For fundamental ROS 2 concepts, review [ROS 2 Fundamentals](../ros2-fundamentals/index.md)
+- For fundamental ROS 2 concepts, review [ROS 2 Fundamentals](../ros2-fundamentals/intro.md)
 
 ## Chapter Complete
 

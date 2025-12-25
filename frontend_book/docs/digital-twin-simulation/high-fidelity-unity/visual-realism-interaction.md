@@ -525,5 +525,5 @@ Visual realism and interaction are critical components of effective digital twin
 
 ## Navigation
 
-- **Previous**: [High-Fidelity Environments with Unity](./index.md)
+- **Previous**: [High-Fidelity Environments with Unity](./intro.md)
 - **Next**: [Human-Robot Interaction Scenarios](./human-robot-interaction-scenarios.md)
