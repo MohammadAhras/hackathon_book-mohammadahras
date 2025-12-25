@@ -11,7 +11,7 @@ const config = {
   tagline: 'Learn ROS 2 fundamentals, Python agents with rclpy, and humanoid modeling with URDF',
   favicon: 'img/favicon.ico',
 
-  url: 'https://MohammadAhras.github.io',
+  url: 'http://localhost:3000',
   baseUrl: '/Hackathon_book/',
 
   organizationName: 'qmobx',
@@ -29,11 +29,10 @@ const config = {
     [
       'classic',
       {
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/MohammadAhras/hackathon_book-mohammadahras/tree/master/',
-          routeBasePath: '/',  // This makes docs available at site root
-        },
+       docs: {
+        routeBasePath: 'docs',
+        sidebarPath: require.resolve('./sidebars.js'),
+          },
         blog: false,  // Disable blog to avoid route conflicts, or set path: '/blog'
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -43,60 +42,70 @@ const config = {
   ],
 
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg',
+  image: 'img/docusaurus-social-card.jpg',
 
-    navbar: {
-      title: 'ROS 2 Robotics Module',
-      logo: {
-        alt: 'ROS 2 Robotics Module Logo',
-        src: 'img/logo.svg',
-        href: '/',  // Now links to homepage which shows docs
+  navbar: {
+    title: 'ROS 2 Robotics Module',
+    logo: {
+      alt: 'ROS 2 Robotics Module Logo',
+      src: 'img/logo.svg',
+      href: '/',
+    },
+    items: [
+      {
+        type: 'docSidebar',
+        sidebarId: 'tutorialSidebar',
+        position: 'left',
+        label: 'Docs',
       },
-      items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
-        {
-          href: 'https://github.com/MohammadAhras/hackathon_book-mohammadahras',
-          label: 'GitHub',
-          position: 'right',
-        },
-      ],
-    },
-
-    footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [{ label: 'Introduction', to: '/' }],
-        },
-        {
-          title: 'Community',
-          items: [
-            { label: 'Stack Overflow', href: 'https://stackoverflow.com/questions/tagged/docusaurus' },
-            { label: 'Discord', href: 'https://discordapp.com/invite/docusaurus' },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            { label: 'GitHub', href: 'https://github.com/MohammadAhras/hackathon_book-mohammadahras' },
-          ],
-        },
-      ],
-      copyright:
-        `Copyright © ${new Date().getFullYear()} ROS 2 Robotics Module. Built with Docusaurus.`,
-    },
-
-    prism: {
-      theme: lightCodeTheme,
-      darkTheme: darkCodeTheme,
-    },
+      {
+        href: 'https://github.com/MohammadAhras',
+        label: 'GitHub',
+        position: 'right',
+      },
+    ],
   },
-};
 
-module.exports = config;
+  footer: {
+    style: 'dark',
+    links: [
+      {
+        title: 'Docs',
+        items: [{ label: 'Introduction', to: '/docs/intro' }],
+      },
+      {
+        title: 'Community',
+        items: [
+          {
+            label: 'Stack Overflow',
+            href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+          },
+          {
+            label: 'Discord',
+            href: 'https://discordapp.com/invite/docusaurus',
+          },
+        ],
+      },
+      {
+        title: 'More',
+        items: [
+          {
+            label: 'GitHub',
+            href: 'https://github.com/MohammadAhras/hackathon_book-mohammadahras',
+          },
+        ],
+      },
+    ],
+    copyright: `Copyright © ${new Date().getFullYear()} ROS 2 Robotics Module. Built with Docusaurus.`,
+  },
+
+  prism: {
+    theme: require('prism-react-renderer').themes.github,
+    darkTheme: require('prism-react-renderer').themes.dracula,
+  },
+},
+
+
+}
+
+module.exports = config

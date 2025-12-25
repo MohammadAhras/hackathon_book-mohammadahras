@@ -221,5 +221,5 @@ Gravity, collisions, and dynamics form the foundation of realistic physics simul
 
 ## Navigation
 
-- **Previous**: [Physics Simulation with Gazebo](./index.md)
+- **Previous**: [Physics Simulation with Gazebo](./intro.md)
 - **Next**: [World and Robot Simulation Basics](./world-robot-simulation.md)

@@ -159,12 +159,11 @@ ROS 2 serves as the critical middleware connecting AI algorithms to physical rob
 ## Navigation
 
 - **Previous**: [Communication Model](./communication-model.md)
-- **Next**: [Python Agents with rclpy](../python-agents/index.md)
+- **Next**: [Humanoid Modeling with URDF](../humanoid-modeling/intro.md)
 
 ## Cross-References
 
-- Apply these concepts with [Python Agents with rclpy](../python-agents/index.md) to create actual implementations
-- Use [Humanoid Modeling with URDF](../humanoid-modeling/index.md) to create robot models for your AI agents to control
+- Apply these concepts by moving to [Humanoid Modeling with URDF](../humanoid-modeling/intro.md) to create robot models for your AI agents to control
 
 ## Chapter Complete
 

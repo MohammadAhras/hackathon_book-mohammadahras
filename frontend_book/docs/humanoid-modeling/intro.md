@@ -44,7 +44,7 @@ Continue with the next articles in this chapter to dive deeper into each concept
 
 ## Navigation
 
-- **Previous**: [Publishing, Subscribing, and Service Calls](../python-agents/pub-sub-service-calls.md)
+- **Previous**: [Role in Physical AI](../ros2-fundamentals/role-in-physical-ai.md)
 - **Next**: [Links, Joints, and Sensors](./links-joints-sensors.md)
 
 ## Further Reading

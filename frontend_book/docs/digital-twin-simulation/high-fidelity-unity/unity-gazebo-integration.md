@@ -900,11 +900,11 @@ Unity and Gazebo provide complementary capabilities that, when properly integrat
 ## Navigation
 
 - **Previous**: [Human-Robot Interaction Scenarios](./human-robot-interaction-scenarios.md)
-- **Next**: [Digital Twin Simulation](../index.md)
+- **Next**: [Digital Twin Simulation](../intro.md)
 
 ## Cross-References
 
-- For physics simulation concepts, review [Physics Simulation with Gazebo](../physics-simulation-gazebo/index.md)
+- For physics simulation concepts, review [Physics Simulation with Gazebo](../physics-simulation-gazebo/intro.md)
 - For visual realism, see [Visual Realism and Interaction](./visual-realism-interaction.md)
 
 ## Chapter Complete

@@ -2,43 +2,45 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  tutorialSidebar: [
+  tutorialSidebar:  [
     {
       type: 'doc',
       id: 'intro',
+    
     },
     {
       type: 'category',
       label: 'ROS 2 Fundamentals',
+      collapsed: false,
       items: [
-        'ros2-fundamentals/index',
+        'ros2-fundamentals/intro',
         'ros2-fundamentals/nodes-topics-services-actions',
         'ros2-fundamentals/communication-model',
         'ros2-fundamentals/role-in-physical-ai',
       ],
-      collapsed: false,
+
     },
     {
       type: 'category',
       label: 'Humanoid Modeling with URDF',
+      collapsed: false,
       items: [
-        'humanoid-modeling/index',
+        'humanoid-modeling/intro',
         'humanoid-modeling/links-joints-sensors',
         'humanoid-modeling/representing-anatomy',
         'humanoid-modeling/urdf-simulation-control',
       ],
-      collapsed: false,
     },
     {
       type: 'category',
       label: 'Digital Twin Simulation',
       items: [
-        'digital-twin-simulation/index',
+        'digital-twin-simulation/intro',
         {
           type: 'category',
           label: 'Physics Simulation with Gazebo',
           items: [
-            'digital-twin-simulation/physics-simulation-gazebo/index',
+            'digital-twin-simulation/physics-simulation-gazebo/intro',
             'digital-twin-simulation/physics-simulation-gazebo/gravity-collisions-dynamics',
             'digital-twin-simulation/physics-simulation-gazebo/world-robot-simulation',
             'digital-twin-simulation/physics-simulation-gazebo/role-gazebo-robotics-testing',
@@ -48,7 +50,7 @@ const sidebars = {
           type: 'category',
           label: 'High-Fidelity Environments with Unity',
           items: [
-            'digital-twin-simulation/high-fidelity-unity/index',
+            'digital-twin-simulation/high-fidelity-unity/intro',
             'digital-twin-simulation/high-fidelity-unity/visual-realism-interaction',
             'digital-twin-simulation/high-fidelity-unity/human-robot-interaction-scenarios',
             'digital-twin-simulation/high-fidelity-unity/unity-gazebo-integration',
@@ -58,14 +60,14 @@ const sidebars = {
           type: 'category',
           label: 'Sensor Simulation',
           items: [
-            'digital-twin-simulation/sensor-simulation/index',
+            'digital-twin-simulation/sensor-simulation/index',  // This one has index.md
             'digital-twin-simulation/sensor-simulation/lidar-depth-cameras-imus',
             'digital-twin-simulation/sensor-simulation/sensor-noise-realism',
             'digital-twin-simulation/sensor-simulation/simulation-reality-considerations',
           ],
         },
       ],
-      collapsed: false,
+
     },
     {
       type: 'category',

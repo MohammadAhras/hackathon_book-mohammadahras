@@ -1103,7 +1103,7 @@ Simulation-to-reality considerations are critical for effective digital twin app
 ## Navigation
 
 - **Previous**: [Sensor Noise and Realism](./sensor-noise-realism.md)
-- **Next**: [Digital Twin Simulation](../index.md)
+- **Next**: [Digital Twin Simulation](../intro.md)
 
 ## Cross-References
 

@@ -282,5 +282,5 @@ Links, joints, and sensors form the fundamental building blocks of URDF robot mo
 
 ## Navigation
 
-- **Previous**: [Humanoid Modeling with URDF](./index.md)
+- **Previous**: [Humanoid Modeling with URDF](./intro.md)
 - **Next**: [Representing Anatomy](./representing-anatomy.md)

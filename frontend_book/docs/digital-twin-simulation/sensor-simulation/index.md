@@ -49,7 +49,7 @@ Continue with the next articles in this chapter to dive deeper into each concept
 
 ## Navigation
 
-- **Previous**: [Digital Twin Simulation](../index.md)
+- **Previous**: [Digital Twin Simulation](../intro.md)
 - **Next**: [LiDAR, Depth Cameras, IMUs](./lidar-depth-cameras-imus.md)
 
 ## Further Reading
