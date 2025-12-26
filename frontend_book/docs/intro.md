@@ -1,13 +1,13 @@
 ---
 id: intro
 title: Introduction
-description: Introduction to ROS 2 Robotics Module
+description: Introduction to Physical AI & Humanoid Robotics
 sidebar_position: 1
 ---
 
 ## Welcome 👋
 
-Welcome to the **ROS 2 Robotics Module**.
+Welcome to the **Physical AI & Humanoid Robotics**.
 
 This module introduces the fundamentals of **Robot Operating System 2 (ROS 2)**,
 designed for modern robotics and physical AI systems.
