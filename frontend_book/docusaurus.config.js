@@ -11,8 +11,8 @@ const config = {
   tagline: 'Learn ROS 2 fundamentals, Python agents with rclpy, and humanoid modeling with URDF',
   favicon: 'img/favicon.ico',
 
-  url: 'https://hackathon-book-mohammadahras.vercel.app/',
-  baseUrl: '/Hackathon_book/',
+  url: 'http://localhost:3000',
+  baseUrl: '/',
 
   organizationName: 'qmobx',
   projectName: 'Hackathon_book',
