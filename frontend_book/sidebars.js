@@ -139,6 +139,15 @@ const sidebars = {
       ],
       collapsed: false,
     },
+    {
+      type: 'category',
+      label: 'Docusaurus UI Upgrade',
+      items: [
+        'docusaurus-ui/index',
+        'docusaurus-ui/summary-next-steps',
+      ],
+      collapsed: true,
+    },
   ],
 };
 

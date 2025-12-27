@@ -11,17 +11,22 @@ const config = {
   tagline: 'Learn ROS 2 fundamentals, Python agents with rclpy, and humanoid modeling with URDF',
   favicon: 'img/favicon.ico',
 
-  url: 'http://MohammadAhras.github.io',
-  baseUrl: '/',
+  url: 'https://MohammadAhras.github.io',
+  baseUrl: '/Hackathon_book/',
 
   organizationName: 'qmobx',
   projectName: 'Hackathon_book',
 
   onBrokenLinks: 'ignore',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    format: 'detect',
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
 
   i18n: {
-    defaultLocale: 'en',
+   defaultLocale: 'en',
     locales: ['en'],
   },
 
@@ -71,7 +76,15 @@ const config = {
     links: [
       {
         title: 'Docs',
-        items: [{ label: 'Introduction', to: '/docs/intro' }],
+        items: [
+          { label: 'Introduction', to: '/docs/intro' },
+          { label: 'ROS 2 Fundamentals', to: '/docs/ros2-fundamentals/intro' },
+          { label: 'Humanoid Modeling', to: '/docs/humanoid-modeling/intro' },
+          { label: 'Digital Twin Simulation', to: '/docs/digital-twin-simulation/intro' },
+          { label: 'AI-Robot Brain (Isaac)', to: '/docs/ai-robot-brain-isaac/index' },
+          { label: 'Vision-Language-Action', to: '/docs/vla-module/index' },
+          { label: 'Docusaurus UI Upgrade', to: '/docs/docusaurus-ui/index' },
+        ],
       },
       {
         title: 'Community',
