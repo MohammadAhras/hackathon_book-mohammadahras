@@ -16,7 +16,7 @@ const config = {
   // trailingSlash: false, // Recommended for Vercel
 
   organizationName: 'MohammadAhras',
-  projectName: 'hackathon_book-mohammadahras',
+  projectName: 'HACKATHON_BOOK',
 
   onBrokenLinks: 'warn', // Changed from 'throw' to avoid build failures during development
   markdown: {
