@@ -7,11 +7,11 @@ const darkCodeTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'ROS 2 Robotics Module',
+  title: 'Physical AI & Humanoid Robotics',
   tagline: 'Learn ROS 2 fundamentals, Python agents with rclpy, and humanoid modeling with URDF',
   favicon: 'img/favicon.ico',
 
-  url: 'http://localhost:3000',
+  url: 'https://hackathon-book-mohammadahras.vercel.app/',
   baseUrl: '/',
 
   organizationName: 'qmobx',
