@@ -11,7 +11,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // ✅ Vercel deployment configuration
-  url: 'https://hackathon-book-mohammadahras.vercel.app', // Your Vercel deployment URL
+  url: 'http://localhost:3000', // Your Vercel deployment URL
   baseUrl: '/', // Serve from root - correct for Vercel
   // trailingSlash: false, // Recommended for Vercel
 

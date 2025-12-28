@@ -1,0 +1,222 @@
+# UI Component Contracts: Docusaurus UI Upgrade
+
+## Overview
+
+This document defines the contracts for the UI components that will be implemented as part of the Docusaurus UI upgrade. These contracts specify the interfaces, properties, and behaviors of the components to ensure consistency and proper integration.
+
+## Component Contracts
+
+### HeroSection Component Contract
+
+#### Interface
+```typescript
+interface HeroSectionProps {
+  title?: string;           // Main headline text (default: "Physical AI & Humanoid Robotics")
+  subtitle?: string;        // Supporting text (default: "Modern documentation for ROS 2, URDF, and Robotics")
+  ctaText?: string;         // CTA button text (default: "Start Reading")
+  ctaLink?: string;         // Destination link (default: "/docs/intro")
+  visualElements?: string[]; // Visual elements to include (optional)
+  theme?: 'dark' | 'light' | 'cinematic'; // Theme variant (default: 'dark')
+}
+
+interface HeroSectionState {
+  loading: boolean;         // Whether content is still loading
+  error: string | null;     // Error message if content fails to load
+}
+```
+
+#### Behavior
+- Renders a cinematic hero section with gradient background
+- Displays title with gradient text effect
+- Shows subtitle with secondary styling
+- Includes a prominent CTA button with hover effects
+- Applies appropriate theme based on props
+- Maintains accessibility standards (ARIA labels, keyboard navigation)
+
+#### Styling Requirements
+- Uses `--futuristic-gradient-main` for background
+- Applies `--futuristic-glow-primary` effect to text
+- Maintains responsive design across all screen sizes
+- Supports both light and dark modes
+
+#### Dependencies
+- Docusaurus Link component for navigation
+- CSS modules for styling (HeroSection.css)
+
+### FeatureCard Component Contract
+
+#### Interface
+```typescript
+interface FeatureCardProps {
+  title: string;            // Card title (required)
+  description: string;      // Brief description (required)
+  link: string;             // Destination link (required)
+  icon?: string;            // Optional icon identifier (default: '📄')
+  category?: string;        // Category identifier (optional)
+  depth?: 1 | 2 | 3;       // Visual depth level (default: 1)
+  isNew?: boolean;          // Whether this is a new section (optional)
+}
+
+interface FeatureCardStyle {
+  gradient: string;         // CSS gradient for background
+  glowEffect: boolean;      // Whether to apply glow effect
+  depth: number;            // Visual depth level (1-3)
+}
+```
+
+#### Behavior
+- Renders as a clickable card linking to documentation section
+- Displays icon, title, and description
+- Shows arrow indicator on hover
+- Applies depth-based styling
+- Maintains accessibility standards
+- Provides smooth hover animations
+
+#### Styling Requirements
+- Uses `--futuristic-gradient-card` for background
+- Applies depth-based border colors
+- Supports hover effects with transform and glow
+- Maintains responsive grid layout
+
+#### Dependencies
+- Docusaurus Link component for navigation
+- CSS modules for styling (FeatureCard.css)
+
+### CTAButton Component Contract
+
+#### Interface
+```typescript
+interface CTAButtonProps {
+  text: string;             // Button text (required)
+  link: string;             // Destination URL (required)
+  variant?: 'primary' | 'secondary' | 'ghost'; // Style variant (default: 'primary')
+  size?: 'small' | 'medium' | 'large'; // Size variant (default: 'medium')
+  isLoading?: boolean;      // Loading state (default: false)
+  glow?: boolean;           // Glow effect (default: true)
+  gradient?: string;        // Custom gradient (optional)
+}
+
+interface CTAButtonState {
+  isLoading: boolean;       // Whether button is in loading state
+  isHovered: boolean;       // Whether button is being hovered
+}
+```
+
+#### Behavior
+- Renders as a styled button with gradient background
+- Navigates to specified link when clicked
+- Shows loading state if isLoading is true
+- Applies hover effects and glow
+- Maintains accessibility standards
+
+#### Styling Requirements
+- Uses `--futuristic-gradient-button` for default background
+- Applies `--futuristic-glow-primary` effect on hover
+- Supports different size variants
+- Maintains consistent padding and typography
+
+### ThemeProvider Component Contract
+
+#### Interface
+```typescript
+interface ThemeProviderProps {
+  theme: 'dark' | 'light';  // Current theme (default: 'dark')
+  primaryColor?: string;    // Custom primary color (optional)
+  secondaryColor?: string;  // Custom secondary color (optional)
+  gradientPresets?: string[]; // Available gradient configurations (optional)
+}
+
+interface ThemeProviderState {
+  isDarkMode: boolean;      // Whether dark mode is active
+  themeConfig: ThemeConfig; // Current theme configuration object
+}
+
+interface ThemeConfig {
+  colors: {
+    primary: string;
+    secondary: string;
+    accent: string;
+    background: {
+      dark: string;
+      darker: string;
+    };
+    text: {
+      primary: string;
+      secondary: string;
+    };
+  };
+  gradients: {
+    main: string;
+    card: string;
+    button: string;
+  };
+  effects: {
+    glow: {
+      primary: string;
+      secondary: string;
+      intensity: number;
+    };
+  };
+}
+```
+
+#### Behavior
+- Provides theme context to child components
+- Manages theme switching between light/dark modes
+- Applies CSS variables for consistent theming
+- Persists theme preference in localStorage
+- Updates theme when props change
+
+#### Styling Requirements
+- Dynamically updates CSS custom properties
+- Provides smooth transitions between themes
+- Maintains all color contrast ratios for accessibility
+
+## API Contracts
+
+### Configuration API
+
+The theme system will expose configuration options through the docusaurus.config.js:
+
+```javascript
+// Example configuration additions
+module.exports = {
+  // ... existing config
+  themeConfig: {
+    // ... existing theme config
+    futuristicTheme: {
+      enabled: true,
+      darkMode: true,
+      gradients: {
+        main: 'linear-gradient(135deg, #1e40af 0%, #25c2a0 100%)',
+        card: 'linear-gradient(135deg, #1e40af 0%, #25c2a0 100%)',
+        button: 'linear-gradient(135deg, #25c2a0 0%, #60a5fa 100%)'
+      },
+      glowEffects: {
+        enabled: true,
+        intensity: 0.3
+      }
+    }
+  }
+};
+```
+
+## Validation Contracts
+
+### Accessibility Compliance
+- All components must pass WCAG 2.1 AA contrast ratios
+- All interactive elements must support keyboard navigation
+- All components must have proper ARIA attributes
+- All components must be screen reader compatible
+
+### Performance Requirements
+- Components must render in <50ms
+- CSS bundle size must remain <100KB
+- JavaScript bundle size must remain <200KB
+- Page load time must remain under 3 seconds
+
+### Compatibility Requirements
+- Components must work in all modern browsers (Chrome, Firefox, Safari, Edge)
+- Components must be responsive across mobile, tablet, and desktop
+- Components must maintain functionality when JavaScript is disabled
+- Components must work with existing Docusaurus navigation

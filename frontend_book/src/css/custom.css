@@ -31,6 +31,22 @@
   --ifm-color-text-dark-700: #b3b3b3;
   --ifm-color-text-dark-800: #cccccc;
   --ifm-color-text-dark-900: #e6e6e6;
+
+  /* New futuristic theme variables */
+  --futuristic-primary: #25c2a0;
+  --futuristic-secondary: #1e40af;
+  --futuristic-accent: #60a5fa;
+  --futuristic-bg-dark: #0f172a;
+  --futuristic-bg-darker: #020617;
+  --futuristic-text-primary: #f1f5f9;
+  --futuristic-text-secondary: #cbd5e1;
+  --futuristic-border-color: #334155;
+  --futuristic-gradient-main: linear-gradient(135deg, #1e40af 0%, #25c2a0 100%);
+  --futuristic-gradient-card: linear-gradient(135deg, #1e40af 0%, #25c2a0 100%);
+  --futuristic-gradient-button: linear-gradient(135deg, #25c2a0 0%, #60a5fa 100%);
+  --futuristic-glow-primary: 0 0 15px rgba(37, 194, 160, 0.5);
+  --futuristic-glow-secondary: 0 0 15px rgba(96, 165, 250, 0.5);
+  --futuristic-glow-intensity: 0.3;
 }
 
 /* Enhanced typography */
@@ -281,4 +297,13 @@ textarea:focus {
   --ifm-color-primary-light: #46d3b1;
   --ifm-color-primary-lighter: #6be0c3;
   --ifm-color-primary-lightest: #90edda;
+
+  --futuristic-primary: #25c2a0;
+  --futuristic-secondary: #3b82f6;
+  --futuristic-accent: #60a5fa;
+  --futuristic-bg-dark: #0f172a;
+  --futuristic-bg-darker: #020617;
+  --futuristic-text-primary: #f1f5f9;
+  --futuristic-text-secondary: #cbd5e1;
+  --futuristic-border-color: #334155;
 }
