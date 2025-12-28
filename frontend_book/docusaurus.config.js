@@ -3,12 +3,12 @@ const { themes } = require('prism-react-renderer');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'ROS 2 Robotics Module',
+  title: 'Physical AI & Humanoid Robotics',
   tagline: 'Modern documentation for ROS 2, URDF, and Robotics',
   favicon: 'img/favicon.ico',
 
   // ✅ Vercel requires root
-  url: 'https://hackathon-book-mohammadahras.vercel.app',
+  url: 'http://localhost:3000/',
   baseUrl: '/',
 
   organizationName: 'qmobx',
