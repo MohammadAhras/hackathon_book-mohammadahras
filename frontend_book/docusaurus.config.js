@@ -8,7 +8,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // ✅ Vercel requires root
-  url: 'http://localhost:3000/',
+  url: 'https://hackathon-book-mohammadahras.vercel.app',
   baseUrl: '/',
 
   organizationName: 'qmobx',
