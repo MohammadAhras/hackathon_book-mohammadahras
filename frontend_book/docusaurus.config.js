@@ -12,7 +12,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   url: 'http://localhost:3000',
-  baseUrl: '/Hackathon_book/',
+  baseUrl: '/',
 
   organizationName: 'qmobx',
   projectName: 'Hackathon_book',
