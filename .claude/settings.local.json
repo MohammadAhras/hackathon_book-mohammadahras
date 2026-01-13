@@ -15,7 +15,24 @@
       "Bash(npm run build)",
       "Bash(npx docusaurus build)",
       "Bash(npx docusaurus serve)",
-      "Bash(npx docusaurus start --port 3001)"
+      "Bash(npx docusaurus start --port 3001)",
+      "Bash(ls -1d specs/*-rag-book-embedding)",
+      "Bash(ls -1d specs/*)",
+      "Bash(powershell -ExecutionPolicy Bypass -File \".specify/scripts/powershell/create-new-feature.ps1\" -ShortName \"rag-book-embedding\" -Number 7 \"Deploy book URLs, generate embeddings, and store them in a vector database\n\nTarget audience: Developers integrating RAG with documentation websites\n\nFocus: Reliable ingestion, embedding, and storage of book content for retrieval\n\nSuccess criteria:\n\nAll public Docusaurus URLs are crawled and cleaned\nText is chunked and embedded using Cohere models\nEmbeddings are stored and indexed in Qdrant successfully\nVector search returns relevant chunks for test queries\n\nConstraints:\n\nTech stack: Python, Cohere Embeddings, Qdrant \\(Cloud Free Tier\\)\nData source: Deployed Vercel URLs only\nFormat: Modular scripts with clear config/env handling\nTimeline: Complete within 3-5 tasks\n\nNot building:\n\nRetrieval or ranking logic\nAgent or chatbot logic\nFrontend or FastAPI integration\nUser authentication or analytics\")",
+      "Skill(sp.phr)",
+      "Bash(.specify/scripts/bash/create-phr.sh --title \"Generate RAG Book Embedding Tasks\" --stage tasks --feature \"rag-book-embedding\" --json)",
+      "Bash(git rev-parse --git-dir)",
+      "Bash(curl -LsSf https://astral.sh/uv/install.sh)",
+      "Bash(sh)",
+      "Bash(export PATH=\"$HOME/.local/bin:$PATH\")",
+      "Bash(uv init)",
+      "Bash(uv add requests beautifulsoup4 cohere qdrant-client python-dotenv pydantic)",
+      "Bash(python -m py_compile src/embedding/client.py)",
+      "Bash(.specify/scripts/powershell/create-new-feature.ps1 -Json \"{\"\"featureDescription\"\":\"\"Deploy book URLs, generate embeddings, and store them in a vestor database\\\\n\\\\nTarget audience: Developers integrating RAG with documentation websites\\\\n\\\\nFocus: Reliable ingestion, embedding, and storage of book content for retrieval\\\\n\\\\nSuccess criteria:\\\\n\\\\nAll public Docusaurus URLS are crawled and cleaned\\\\nText is chunked and embedded using Cohere models\\\\nEmbeddings are stored and indexed in Odrant successfully\\\\nVector search returns relevant chunks for test queries\\\\n\\\\nConstraints:\\\\n\\\\nTech stack: Python, Cohere Embeddings, Qdrant \\(Cloud Free Tier\\)\\\\n\\\\nData source: Deployed Vercel URLs only\\\\n\\\\nFormat: Modular scripts with clear config/env handling\\\\n\\\\nTimeline: Complete within 3-5 tasks\\\\n\\\\nNot: building:\\\\n\\\\nRetrieval or ranking logic\\\\nAgent or chatbot logic\\\\nFrontend or FastAPI integration\\\\nUser authentication or analytics\"\",\"\"shortName\"\":\"\"rag-book-embedding\"\",\"\"number\"\":8,\"\"branchExists\"\":true}\")",
+      "Bash(.specify/scripts/powershell/check-prerequisites.ps1 -Json)",
+      "Bash(dir \"C:\\\\Users\\\\qmobx\\\\Desktop\\\\Hackathon_book\\\\backend\" /s)",
+      "Bash(python test_retrieval_validation.py)",
+      "Bash(python retrieve.py --query \"explain ROS 2\" --collection \"docs_embeddings\" --top-k 5 --threshold 0.5)"
     ]
   }
 }
